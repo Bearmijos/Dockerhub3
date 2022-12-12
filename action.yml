@@ -11,6 +11,7 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://alpine:3.10'
+  pre-entrypoint: 'setup.sh'
   entrypoint: 'entrypoint.sh'
   args:
     - ${{ inputs.who-to-greet }}
