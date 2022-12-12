@@ -10,6 +10,6 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'docker://alpine:3.10'
+  image: 'docker://bryanarmijos/dockerhub:v1'
   args:
     - ${{ inputs.who-to-greet }}
