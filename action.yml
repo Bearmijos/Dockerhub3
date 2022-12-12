@@ -11,6 +11,5 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://debian:stretch-slim'
-  steps:
-    - run: echo '123'
-
+  args:
+    - ${{ inputs.who-to-greet }}
